@@ -1,5 +1,12 @@
-<ol>
-  <li *ngFor='let item of vegetables | searching'>
+<div class="form-group">
+  <span class="searchbox-icon"><i class="fa fa-search"></i></span>
+  <input class="center-block fullwidth search" type="text" placeholder="Enter Vegetable Name"
+    [(ngModel)]='searchString' />
+
+</div>
+
+<ol *ngFor='let item of vegetables | searching : searchString '>
+  <li>
     {{item}}
   </li>
 </ol>
