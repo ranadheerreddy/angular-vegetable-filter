@@ -5,14 +5,13 @@ import { AppComponent } from './app.component';
 import { SearchComponent } from './search/search.component';
 import { ListComponent } from './list/list.component';
 import { DataService } from './data.service';
-import { SearchPipe } from './search.pipe';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     SearchComponent,
-    ListComponent, SearchPipe
+    ListComponent
   ],
   imports: [
     BrowserModule,
